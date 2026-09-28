@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JRI Privacy Policy</title>
+<meta name="description" content="How the JRI route app handles your location and data.">
+<style>
+  :root { --ink: #16181d; --ink2: #4a5260; --bg: #ffffff; --line: #e3e6ea; --link: #1f5fbf; }
+  @media (prefers-color-scheme: dark) { :root { --ink: #f2f1ec; --ink2: #b0b8c5; --bg: #0b0d10; --line: #262a31; --link: #5aa0ff; } }
+  html { background: var(--bg); }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 6px; }
+  h2 { font-size: 20px; margin: 34px 0 8px; padding-top: 18px; border-top: 1px solid var(--line); }
+  h3 { font-size: 17px; margin: 20px 0 4px; }
+  p, li { color: var(--ink); }
+  .meta { color: var(--ink2); margin: 0 0 22px; }
+  a { color: var(--link); }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>JRI Privacy Policy</h1>
+<p class="meta">JRI (“Just Route It”) · operated by EverForward Media · Effective September 28, 2026</p>
+
+<p>JRI is a route app for drivers. This policy explains what JRI does with your information, who it is shared with, how long it is kept, and how you can remove it. JRI has no advertising, no analytics of its own, and no user tracking across other companies’ apps or websites. We do not sell your information.</p>
+
+<h2>What JRI uses, and why</h2>
+
+<h3>Your location</h3>
+<p>With your permission (“While Using the App”), JRI uses your device’s precise location to show where you are on the map, to plan and time routes from where you are, to follow your drive, to notice when you arrive, and to find places near you. While you drive, it keeps working when JRI is in the background. You can change or turn off location access at any time in the iPhone’s Settings; JRI then works without your position (for example, a route can start at your first stop).</p>
+
+<h3>Places you search for</h3>
+<p>When you search, the text you type and your approximate position (so results can be near you) are sent to Google Places. When you pick a place, JRI asks Google for that place’s details and position.</p>
+
+<h3>Your routes</h3>
+<p>To plan a route, JRI sends HERE the positions of your start, your stops and your end, your departure or arrival times, and your route choices (such as fastest or shortest, and avoiding tolls). If you drive a truck and set it up, JRI also sends your vehicle’s facts (such as height, width, length, weight, axles and hazardous-load type) so that HERE can plan a route your vehicle can take. When you ask for a new route while driving, your current position is sent as the start.</p>
+
+<h3>The map</h3>
+<p>The map is drawn by Mapbox. To draw it, your device requests map tiles from Mapbox for the area on screen. Mapbox’s software in JRI may also collect location and usage information for Mapbox’s own purposes, as described in Mapbox’s privacy policy.</p>
+
+<h3>Friends (optional)</h3>
+<p>Friends lets you share where you are with one other person while you drive, or follow a friend who shares with you. You do not need an email address, a phone number, a real name or a profile. The first time you use Friends, JRI creates an anonymous account: a random identifier that lets the service connect you to the person you pair with.</p>
+<ul>
+  <li>Pairing uses a code or QR code that expires after five minutes. The person sharing must approve each friend.</li>
+  <li>Your shared position is <strong>encrypted on your phone</strong> with a key only you and your friend hold. The Friends service stores only the latest encrypted update for each pairing, not a location history, and cannot read it.</li>
+  <li>The name a friend gives when they ask to follow you is also encrypted, for you only.</li>
+  <li>The service stores your anonymous identifier, each pairing’s status and times, the public keys used for encryption, and a daily count of updates (used to limit how often updates are sent).</li>
+  <li>Sharing ends when you stop it, when its time is up (end of the run, end of the day, or when you stop), or when you delete your Friends account.</li>
+</ul>
+<p>The Friends service runs on Supabase. Supabase processes requests on our behalf and, like any online service, receives your device’s IP address when your phone connects.</p>
+
+<h3>The camera</h3>
+<p>JRI uses the camera only to scan a friend’s code. No photo is taken or kept.</p>
+
+<h3>What stays on your phone</h3>
+<p>Your day is kept on your phone so it is still there when you reopen JRI: your stops, their order and times, your trip settings, your vehicle setup, your saved places, places you import from a file, and what you record at each stop (such as delivered or not delivered). JRI also keeps a history of its own routing decisions on your phone for 90 days, so a decision can be checked later. Your Friends keys and anonymous account are kept in the iPhone Keychain on this device only. None of this is sent to us.</p>
+
+<h2>Who receives information</h2>
+<ul>
+  <li><strong>Google</strong> (place search) — see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. JRI contains Google Maps content; its use is also subject to the <a href="https://maps.google.com/help/terms_maps/">Google Maps/Google Earth Additional Terms of Service</a>.</li>
+  <li><strong>HERE</strong> (routes) — see the <a href="https://legal.here.com/privacy/policy">HERE Privacy Policy</a>.</li>
+  <li><strong>Mapbox</strong> (the map) — see the <a href="https://www.mapbox.com/legal/privacy">Mapbox Privacy Policy</a>.</li>
+  <li><strong>Supabase</strong> (the Friends service, only if you use Friends) — see the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
+</ul>
+<p>We do not share your information with anyone else, except where the law requires it.</p>
+
+<h2>How long information is kept</h2>
+<ul>
+  <li>Place positions that come from Google are kept on your phone for at most 30 days; after that JRI keeps only Google’s place identifier and treats the position as unknown until you look it up again. Place names and addresses from Google are not written to your phone’s storage.</li>
+  <li>JRI’s routing-decision history on your phone is deleted automatically after 90 days. Positions of places in it are replaced with an unreadable code once they are 30 days old.</li>
+  <li>Your day stays on your phone until you clear it (More → Start over) or delete the app.</li>
+  <li>On the Friends service, the latest encrypted update is removed when a sharing ends, and your account and everything linked to it are removed when you delete your Friends account.</li>
+</ul>
+
+<h2>Your choices</h2>
+<ul>
+  <li><strong>Location:</strong> change or turn off location access in the iPhone’s Settings.</li>
+  <li><strong>Your day:</strong> clear it with More → Start over. Saved places can be removed one by one.</li>
+  <li><strong>Friends:</strong> stop sharing at any time. You can delete your Friends account in the app; this deletes your anonymous account and everything linked to it on the Friends service, ends any sharing, and removes your Friends keys from your phone.</li>
+  <li><strong>Everything on your phone:</strong> deleting JRI from your iPhone removes the information JRI keeps on it.</li>
+</ul>
+
+<h2>Children</h2>
+<p>JRI is made for drivers and is not directed to children under 13.</p>
+
+<h2>Security</h2>
+<p>Connections to the services above are encrypted. Friends updates are encrypted end to end, and your Friends keys stay in the Keychain of your device. No method of storage or transmission is perfectly secure, but we design JRI to keep as little as it can.</p>
+
+<h2>Changes to this policy</h2>
+<p>If JRI changes what it does with your information, we will update this page and its effective date.</p>
+
+<h2>Contact</h2>
+<p>EverForward Media · <a href="mailto:james@everforwardmedia.com">james@everforwardmedia.com</a></p>
+</main>
+</body>
+</html>
