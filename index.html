@@ -24,77 +24,55 @@
 <body>
 <main>
 <h1>JRI Privacy Policy</h1>
-<p class="meta">JRI (“Just Route It”) · operated by EverForward Media · Effective September 28, 2026</p>
-
-<p>JRI is a route app for drivers. This policy explains what JRI does with your information, who it is shared with, how long it is kept, and how you can remove it. JRI has no advertising, no analytics of its own, and no user tracking across other companies’ apps or websites. We do not sell your information.</p>
-
-<h2>What JRI uses, and why</h2>
-
-<h3>Your location</h3>
-<p>With your permission (“While Using the App”), JRI uses your device’s precise location to show where you are on the map, to plan and time routes from where you are, to follow your drive, to notice when you arrive, and to find places near you. While you drive, it keeps working when JRI is in the background. You can change or turn off location access at any time in the iPhone’s Settings; JRI then works without your position (for example, a route can start at your first stop).</p>
-
-<h3>Places you search for</h3>
-<p>When you search, the text you type and your approximate position (so results can be near you) are sent to Google Places. When you pick a place, JRI asks Google for that place’s details and position.</p>
-
-<h3>Your routes</h3>
-<p>To plan a route, JRI sends HERE the positions of your start, your stops and your end, your departure or arrival times, and your route choices (such as fastest or shortest, and avoiding tolls). If you drive a truck and set it up, JRI also sends your vehicle’s facts (such as height, width, length, weight, axles and hazardous-load type) so that HERE can plan a route your vehicle can take. When you ask for a new route while driving, your current position is sent as the start.</p>
-
-<h3>The map</h3>
-<p>The map is drawn by Mapbox. To draw it, your device requests map tiles from Mapbox for the area on screen. Mapbox’s software in JRI may also collect location and usage information for Mapbox’s own purposes, as described in Mapbox’s privacy policy.</p>
-
-<h3>Friends (optional)</h3>
-<p>Friends lets you share where you are with one other person while you drive, or follow a friend who shares with you. You do not need an email address, a phone number, a real name or a profile. The first time you use Friends, JRI creates an anonymous account: a random identifier that lets the service connect you to the person you pair with.</p>
+<p class="meta">Just Route It (JRI) · EverForward Media · Effective October 15, 2026</p>
+<p>JRI helps drivers plan routes and navigate. This policy describes information used by the app, the services that receive it, optional sharing, and your choices. We do not sell your personal information, display advertising, or use your information for cross-app advertising tracking. JRI does not operate its own advertising or behavioral analytics system. Mapping and other service providers process information as described below.</p>
+<h2>Location, searches, routes and fuel</h2>
+<p>With your permission, JRI uses your location for maps, nearby search, route starts, navigation, arrival detection, fuel searches and optional sharing. Location may be precise or approximate, depending on your iPhone settings. During an active drive, location can continue to be used in the background. You can change location permission and Precise Location in iPhone Settings.</p>
+<p><strong>Google Places:</strong> search text, selected place identifiers, and an available location bias are sent to Google to find places and retrieve details such as an address or business hours. The location bias can contain precise coordinates; it is not limited to an approximate area.</p>
+<p><strong>HERE:</strong> route requests include start, stop and destination coordinates, relevant times, route preferences and, when configured, vehicle dimensions, weight and restrictions. Fuel searches send the search area, fuel preferences and station identifiers. A reroute can use your current location.</p>
+<p><strong>Mapbox:</strong> the app requests map content for the area displayed. Its SDK processes connection, device, identifier, usage and diagnostic information to provide and operate its services. JRI disables optional Mapbox metrics collection at startup; this does not prevent map requests, operational or billing-related processing. Mapbox's SDK privacy disclosures also cover location, usage and performance information.</p>
+<p><strong>National Weather Service:</strong> when the weather feature requests a forecast, a location is sent to api.weather.gov to retrieve local forecast information.</p>
+<p>Online services receive connection information such as an IP address and request time. Providers may retain request logs and operational data for security, billing, reliability and service improvement under their policies. An address or destination you enter can identify a home, business or other sensitive place.</p>
+<h2>Optional Friends and Just Routed sharing</h2>
+<p>Basic route planning does not require a Friends account. If you use Friends, JRI creates an anonymous service account with an assigned identifier. Pairings connect that account with people you approve. The service therefore holds account and pairing information, even if you do not provide an email address or real name. JRI does not upload your iPhone address book.</p>
+<p>Sharing can include a display name and live location. Separately approved Just Routed sharing can include selected itinerary, stop names and addresses, route geometry, timing, progress, location and vehicle or fuel details. Review the sharing explanation before approving a viewer. Shared content is encrypted on the sending device for the approved recipient. The Supabase relay stores encrypted content and operational metadata, including account identifiers, pairing status, public keys, timestamps, delivery receipts and usage limits.</p>
+<p>Sharing is optional. Stop or revoke it in the app to prevent further authorized updates. This cannot recall information a recipient has already received, copied or exported.</p>
+<h2>Subscriptions and Apple</h2>
+<p>Apple processes subscription purchases. JRI uses Apple's verified transaction information on your device to determine access and restore purchases. JRI does not receive your payment-card number or Apple Account password. Use JRI's subscription controls or Apple subscription settings to manage or cancel a subscription. Deleting a Friends account or deleting JRI does not cancel an Apple subscription.</p>
+<h2>Information kept on your device</h2>
+<p>JRI stores trip state, stops and their order, user-entered labels, preferences, vehicle settings and saved-place references so you can continue using the app. Some place details are held only for the current session. Diagnostic routing records are stored locally. Friends account credentials and encryption keys are held in the device Keychain. Receiving devices can keep the shared history described below.</p>
+<p>The camera is used to scan sharing codes. JRI does not upload camera images or save photos from that scan. Spoken navigation uses the device's speech output; JRI does not record your conversations.</p>
+<h2>Retention</h2>
 <ul>
-  <li>Pairing uses a code or QR code that expires after five minutes. The person sharing must approve each friend.</li>
-  <li>Your shared position is <strong>encrypted on your phone</strong> with a key only you and your friend hold. The Friends service stores only the latest encrypted update for each pairing, not a location history, and cannot read it.</li>
-  <li>The name a friend gives when they ask to follow you is also encrypted, for you only.</li>
-  <li>The service stores your anonymous identifier, each pairing’s status and times, the public keys used for encryption, and a daily count of updates (used to limit how often updates are sent).</li>
-  <li>Sharing ends when you stop it, when its time is up (end of the run, end of the day, or when you stop), or when you delete your Friends account.</li>
+<li>Google-derived coordinates cached by JRI expire after 30 days; a place identifier can remain for a later lookup. Google-provided names and addresses are not written into JRI's saved-place library. Information you explicitly share with a viewer is subject to the sharing retention below.</li>
+<li>Local routing-decision records are pruned on app activity to a 90-day window. Older coordinate fields are protected by the log's place-digest rules.</li>
+<li>Friends receiving history is limited to seven routes per driver, with location points aged out after seven days.</li>
+<li>For Just Routed, the sending queue retains unsent records for up to 24 hours. Relay records have a seven-day expiry and are removed by service cleanup; encrypted packets can be removed earlier after receipt. The viewer retains received history for up to 30 days. Stopping sharing does not erase a recipient's independent copies or exports.</li>
+<li>Expired or revoked pairing metadata is removed by scheduled cleanup after 30 days. Deleting a Friends account removes the account and associated live service records through the service's deletion process.</li>
+<li>Local preferences and saved items remain until you clear or remove them. Keychain credentials can survive uninstalling the app; use the in-app account deletion control before uninstalling if you want to delete your Friends account.</li>
 </ul>
-<p>The Friends service runs on Supabase. Supabase processes requests on our behalf and, like any online service, receives your device’s IP address when your phone connects.</p>
-
-<h3>The camera</h3>
-<p>JRI uses the camera only to scan a friend’s code. No photo is taken or kept.</p>
-
-<h3>What stays on your phone</h3>
-<p>Your day is kept on your phone so it is still there when you reopen JRI: your stops, their order and times, your trip settings, your vehicle setup, your saved places, places you import from a file, and what you record at each stop (such as delivered or not delivered). JRI also keeps a history of its own routing decisions on your phone for 90 days, so a decision can be checked later. Your Friends keys and anonymous account are kept in the iPhone Keychain on this device only. None of this is sent to us.</p>
-
-<h2>Who receives information</h2>
+<p>Service-provider logs, backups and legally required records may have separate retention periods under the providers' policies. The app's local retention limits are not a promise that every provider log or recipient copy is erased at the same time.</p>
+<h2>Your choices and deletion</h2>
 <ul>
-  <li><strong>Google</strong> (place search) — see the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. JRI contains Google Maps content; its use is also subject to the <a href="https://maps.google.com/help/terms_maps/">Google Maps/Google Earth Additional Terms of Service</a>.</li>
-  <li><strong>HERE</strong> (routes) — see the <a href="https://legal.here.com/privacy/policy">HERE Privacy Policy</a>.</li>
-  <li><strong>Mapbox</strong> (the map) — see the <a href="https://www.mapbox.com/legal/privacy">Mapbox Privacy Policy</a>.</li>
-  <li><strong>Supabase</strong> (the Friends service, only if you use Friends) — see the <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
+<li>Change or revoke location and camera permissions in iPhone Settings.</li>
+<li>Use JRI's Clear and saved-place controls to remove trip or saved-place information.</li>
+<li>Stop sharing or remove a pairing in Friends. Use the in-app Delete Account control to request deletion of your Friends service account and associated records. A successful deletion also removes the app's local Friends credentials. If deletion fails, reconnect and retry; an error is not confirmation of deletion.</li>
+<li>Manage or cancel subscriptions with Apple. Privacy and account-deletion controls do not require a paid subscription.</li>
+<li>For access, correction or deletion questions, contact us below. Do not send passwords, payment-card numbers or private keys. We may need enough information to identify the relevant service account securely.</li>
 </ul>
-<p>We do not share your information with anyone else, except where the law requires it.</p>
-
-<h2>How long information is kept</h2>
+<h2>Service providers and their policies</h2>
 <ul>
-  <li>Place positions that come from Google are kept on your phone for at most 30 days; after that JRI keeps only Google’s place identifier and treats the position as unknown until you look it up again. Place names and addresses from Google are not written to your phone’s storage.</li>
-  <li>JRI’s routing-decision history on your phone is deleted automatically after 90 days. Positions of places in it are replaced with an unreadable code once they are 30 days old.</li>
-  <li>Your day stays on your phone until you clear it (More → Start over) or delete the app.</li>
-  <li>On the Friends service, the latest encrypted update is removed when a sharing ends, and your account and everything linked to it are removed when you delete your Friends account.</li>
+<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://maps.google.com/help/terms_maps/">Google Maps/Google Earth Additional Terms</a>.</li>
+<li><a href="https://legal.here.com/privacy/policy">HERE Privacy Policy</a>.</li>
+<li><a href="https://www.mapbox.com/legal/privacy">Mapbox Privacy Policy</a> and <a href="https://www.mapbox.com/telemetry">Mapbox telemetry information</a>.</li>
+<li><a href="https://supabase.com/privacy">Supabase Privacy Policy</a>, for optional sharing.</li>
+<li><a href="https://www.weather.gov/privacy">National Weather Service privacy information</a>.</li>
+<li><a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>, including Apple services and purchases.</li>
 </ul>
-
-<h2>Your choices</h2>
-<ul>
-  <li><strong>Location:</strong> change or turn off location access in the iPhone’s Settings.</li>
-  <li><strong>Your day:</strong> clear it with More → Start over. Saved places can be removed one by one.</li>
-  <li><strong>Friends:</strong> stop sharing at any time. You can delete your Friends account in the app; this deletes your anonymous account and everything linked to it on the Friends service, ends any sharing, and removes your Friends keys from your phone.</li>
-  <li><strong>Everything on your phone:</strong> deleting JRI from your iPhone removes the information JRI keeps on it.</li>
-</ul>
-
-<h2>Children</h2>
-<p>JRI is made for drivers and is not directed to children under 13.</p>
-
-<h2>Security</h2>
-<p>Connections to the services above are encrypted. Friends updates are encrypted end to end, and your Friends keys stay in the Keychain of your device. No method of storage or transmission is perfectly secure, but we design JRI to keep as little as it can.</p>
-
-<h2>Changes to this policy</h2>
-<p>If JRI changes what it does with your information, we will update this page and its effective date.</p>
-
-<h2>Contact</h2>
-<p>EverForward Media · <a href="mailto:james@everforwardmedia.com">james@everforwardmedia.com</a></p>
-</main>
-</body>
-</html>
+<p>Information may also be disclosed when required by law or to protect the security and rights of users and the service. Providers may process information in countries other than your own.</p>
+<h2>Security and children</h2>
+<p>Network connections use encrypted transport. Optional shared payloads use end-to-end encryption; account and delivery metadata are not the same as encrypted payload content. No storage or transmission method is perfectly secure. JRI is intended for drivers and is not directed to children under 13.</p>
+<h2>Changes and contact</h2>
+<p>We update this page and its effective date when our practices change.</p>
+<p>Privacy and app support: EverForward Media · <a href="mailto:james@everforwardmedia.com">james@everforwardmedia.com</a></p>
+</main></body></html>
